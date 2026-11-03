@@ -1,0 +1,133 @@
+/* =========================================================
+   校园二手教材交易系统 - 全站统一样式
+   只做视觉美化，不涉及任何功能逻辑
+   ========================================================= */
+
+body {
+    background-color: #f5f7fa;
+    color: #343a40;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", Arial, sans-serif;
+}
+
+a { text-decoration: none; }
+
+/* ---------- 导航栏 ---------- */
+.navbar { box-shadow: 0 1px 6px rgba(0, 0, 0, .06); }
+.navbar-brand { font-weight: 600; letter-spacing: .5px; }
+.navbar .nav-link { font-size: .95rem; padding-left: .75rem; padding-right: .75rem; }
+.navbar .nav-link:hover { color: #fff !important; }
+
+/* ---------- 卡片 ---------- */
+.card { border: 1px solid #e8ecf1; border-radius: .6rem; }
+.card-header {
+    background-color: #fff;
+    border-bottom: 1px solid #eef1f5;
+    font-weight: 600;
+}
+
+/* ---------- 首页教材卡片 ---------- */
+.book-card { transition: transform .18s ease, box-shadow .18s ease; }
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 .75rem 1.4rem rgba(33, 37, 41, .12) !important;
+}
+.book-cover {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    background-color: #f1f3f5;
+}
+.book-cover-none {
+    height: 170px;
+    background-color: #f1f3f5;
+    color: #adb5bd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: .85rem;
+}
+.book-cover-none::before {
+    content: "";
+    width: 36px;
+    height: 46px;
+    margin-bottom: 8px;
+    border: 2px solid #ced4da;
+    border-radius: 3px;
+}
+
+/* ---------- 价格 ---------- */
+.price-text { color: #e5484d; font-weight: 700; }
+
+/* ---------- 表格 ---------- */
+.table thead th {
+    background-color: #f8f9fa;
+    color: #495057;
+    font-weight: 600;
+    font-size: .88rem;
+    border-bottom: 1px solid #e9ecef;
+    white-space: nowrap;
+}
+.table tbody td { font-size: .92rem; vertical-align: middle; }
+.table tbody tr:last-child td { border-bottom: none; }
+
+/* ---------- 表单 ---------- */
+.form-label { font-size: .9rem; color: #495057; margin-bottom: .35rem; }
+.form-control, .form-select { border-color: #dee2e6; }
+.form-control:focus, .form-select:focus {
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 .2rem rgba(13, 110, 253, .12);
+}
+.form-text { font-size: .8rem; }
+
+/* ---------- 登录 / 注册 ---------- */
+.auth-wrap { max-width: 430px; margin: 70px auto 40px; padding: 0 12px; }
+.auth-card { border: none; box-shadow: 0 .5rem 1.5rem rgba(33, 37, 41, .08); }
+.auth-title { font-size: 1.15rem; font-weight: 600; }
+
+/* ---------- 教材详情 ---------- */
+.price-lg { color: #e5484d; font-weight: 700; font-size: 1.6rem; }
+.detail-cover {
+    width: 100%;
+    max-height: 340px;
+    object-fit: cover;
+    border-radius: .5rem;
+    border: 1px solid #eef1f5;
+}
+.detail-none {
+    height: 280px;
+    background-color: #f1f3f5;
+    color: #adb5bd;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.detail-none::before {
+    content: "";
+    width: 46px;
+    height: 58px;
+    margin-bottom: 10px;
+    border: 2px solid #ced4da;
+    border-radius: 3px;
+}
+.section-title { font-size: 1rem; font-weight: 600; }
+.desc-box {
+    background-color: #f8f9fa;
+    border-radius: .5rem;
+    padding: 12px 14px;
+    font-size: .9rem;
+    color: #5a6268;
+    white-space: pre-wrap;
+}
+.stars { color: #f0a92e; letter-spacing: 1px; }
+.review-item { border-bottom: 1px solid #eef1f5; padding-bottom: 14px; margin-bottom: 14px; }
+.review-item:last-child { border-bottom: none; padding-bottom: 0; margin-bottom: 0; }
+
+/* ---------- 管理员 tabs ---------- */
+.nav-pills .nav-link { color: #495057; padding: .4rem 1rem; font-size: .92rem; }
+.nav-pills .nav-link.active { background-color: #212529; }
+
+/* ---------- 空状态 ---------- */
+.empty-box { color: #adb5bd; padding: 40px 0; text-align: center; }
